@@ -1,0 +1,9 @@
+{
+    "jpeg": "convert %input% -quality 75 %output%",
+    "jpg": "convert %input% -quality 75 %output%",
+    "html": "minify -a %input% -o %output%",
+    "css": "minify -a %input% -o %output%",
+    "js": "minify -a %input% -o %output%",
+    "mp3": "ffmpeg -i %input% -map 0:a:0 -b:a 96k %output%",
+    "avi": "ffmpeg -i %input% -vcodec msmpeg4v2 -acodec copy %output%"
+}
